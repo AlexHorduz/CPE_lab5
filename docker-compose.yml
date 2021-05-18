@@ -1,0 +1,10 @@
+services:
+    sender:
+        image: lab5_send
+        
+
+    receiver:
+        image: lab5_receive
+        volumes:
+            - ./folder_to_write_to:/usr/src/app/folder_to_write_to
+            
